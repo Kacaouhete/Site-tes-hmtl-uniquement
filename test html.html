@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--titre de la page-->
+    <title>Mm-FAQ</title>
+
+    <!--logo de l'onglet-->
+    <link rel="shortcut icon" href="./logo-test.png">
+
+</head>
+
+<body>
+    
+    <nav>       
+        <!--UL=Unhorder list-->
+        <ul>
+            <li>Acceuil</li>
+            <li>FAQ</li>
+            <li>Actualitées</li>
+            <li>
+            <a href="#form">Formulaires</a>
+            </li>  
+        </ul>
+    </nav>
+
+<header>
+
+    <!--Un seul titre h1 par page-->
+    <h1>Bienvenue sur le site officiel des chaînes Manu militari !</h1>
+
+    <p>
+        Texte classique <em>Texte en italique</em> <strong>Texte en gras</strong>
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque eos? Aspernatur, aliquam pariatur. Nisi aspernatur officia accusamus iure. Nobis corrupti enim ratione natus esse doloribus atque distinctio architecto, possimus debitis quas maxime sint. Quo vel recusandae, exercitationem maiores architecto velit praesentium, minima quis ea, quasi excepturi expedita tempore pariatur.
+    </p>
+
+</header>
+
+<main>
+
+    <section>
+
+        <h2>Ordered List</h2>
+
+        <ol>
+            <li>Liste</li>
+            <li>ds</li>
+            <li>l'ordre</li>
+        </ol>
+
+    </section>
+
+    <section>
+
+        <h3>Image en html</h3>
+    
+        <img src="./image test.jpg" height="200" alt="image-lambda-test">
+        <!--l'alt de l'image est en cas d'erreur et pour l'accessibilité-->
+
+        <div>
+            <h4>Tableau</h4>
+
+            <table border="4" cellpadding="10" cellspacing="4" style="text-align:center">
+                <!--thead=entete du tableau-->
+                <thead>
+                    <!--tr=ligne du tableau-->
+                   <tr>
+                    <!--th=colonne dans la ligne-->
+                    <th>Col1</th>
+                    <th>Col2</th>
+                    <th>Col3</th>
+                   </tr> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Cell 1</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                    </tr>                    
+                    <tr>
+                        <td colspan="2">Cell 4</td>
+                    </tr>
+                </tbody>
+            </table>
+                
+        </div>
+
+        <div>
+            <!--span=icon-->
+           <h5><span>&#8595;</span> Les liens</h5> 
+           <!--Le _(underscore)blank ouvre le lien choisi ds un nouvel onglet-->
+           <a href="https://htmlcheatsheet.com" target="_blank">Html Cheat Sheet</a>
+
+        </div>
+
+        <div>
+
+            <!--i=icon-->
+            <h6><i>&#128253;</i>Vidéo</h6>
+            <video src="./vidéo test.mp4" muted autoplay loop height="200"></video>
+
+        </div>
+
+    </section>
+
+    <section id="form">
+
+        <h2>Les formulaires</h2>
+        <form action="">
+            <!--"for" et "id" permettent de lier des labels et des input-->
+            <label for="name">Nom</label>
+            <input id="name" type="text" placeholder="Entrez votre Nom" /><br>
+
+            <label for="age">Age</label>
+            <input type="number" value="0" id="age" placeholder="Entrez votre Age"><br>
+
+            <!--Input de type select-->
+            <label for="genre">Choisir votre genre</label>
+            <select id="genre">
+                <option value="Choisir un genre" selected="selected" >Choisir un genre</option>
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+                <option value="Non Binaire">Non Binaire</option>
+                <option value="Cheval ascendant Barrière">Cheval ascendant Barrière</option>
+            </select>
+            
+            <!--Input de type radio-->
+            <div>
+                <input type="radio" name="type" id="humain" checked>
+                <label for="humain">Humain</label>
+
+                <input type="radio" name="type" id="chat">
+                <label for="chat">Chat</label>
+
+                <input type="radio" name="type" id="dog">
+                <label for="dog">Chien</label>
+            </div>
+
+            <textarea placeholder="Votre message..." cols="20" rows="5"></textarea> <br>
+
+            <!--Input de type checkbox-->
+            <input type="checkbox" id="cc">
+            <label for="cc">Accepter les conditions au conditionel</label> 
+            <br>
+
+            <!--Input de type submit permet de valider-->
+            <input type="submit" value="Bouton de validation du formulaire">
+            <br><br>
+        </form>
+
+        <button>Ceci est un bouton (clique stp)</button>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <!--Mail et envoie de fichiers-->
+
+    <br><a href="mailto:kacahouete@gmail.com" target="_blank">Contactez moi !</a><br>
+
+    <a href="./clique tkt.txt" download="rickroll" target="_blank">clique ici puis ouvre le fichier et suis l'instruction</a>
+
+</footer>
+
+
+</body>
+
+</html>
